@@ -35,7 +35,6 @@
   margin-right: 3rem;
   padding: 0 5.6rem;
   height: 6rem;
-  // width: calc(100% - 21rem);
   width: 6rem;
   text-transform: uppercase;
   font: inherit;
@@ -86,8 +85,6 @@
 }
 
 .form__button {
-  // flex-grow: 1;
-
   @media (orientation: portrait) {
     position: relative;
     flex: none;
