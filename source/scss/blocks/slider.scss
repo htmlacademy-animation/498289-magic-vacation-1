@@ -95,6 +95,8 @@
   max-width: 34rem;
   font-size: 1.8rem;
   line-height: 2rem;
+  opacity: 0;
+  transform: translateX(3rem);
 
   @media (min-width: $stop-scaling) {
     margin-top: 36px;
@@ -122,6 +124,26 @@
     font-size: 1.4rem;
     line-height: 1.5rem;
   }
+}
+
+.screen--hidden .slider__item-text,
+.screen--hidden .swiper-slide-active .slider__item-text ,
+.screen--hidden .swiper-slide-next .slider__item-text {
+  opacity: 0;
+  transform: translateX(3rem);
+}
+
+
+.active .swiper-slide-active .slider__item-text {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.4s ease-out 0.3s, transform 0.4s ease-out 0.3s;
+}
+
+.active .swiper-slide-next .slider__item-text {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.4s ease-out 0.5s, transform 0.4s ease-out 0.5s;
 }
 
 .slider__controls {
