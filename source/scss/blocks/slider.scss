@@ -138,13 +138,15 @@
 .active .swiper-slide-active .slider__item-text {
   opacity: 1;
   transform: translateX(0);
-  transition: opacity 0.4s ease-out 0.3s, transform 0.4s ease-out 0.3s;
+  transition: opacity 0.4s ease-out 0.3s,
+            transform 0.4s ease-out 0.3s;
 }
 
 .active .swiper-slide-next .slider__item-text {
   opacity: 1;
   transform: translateX(0);
-  transition: opacity 0.4s ease-out 0.5s, transform 0.4s ease-out 0.5s;
+  transition: opacity 0.4s ease-out 0.5s,
+            transform 0.4s ease-out 0.5s;
 }
 
 .slider__controls {
