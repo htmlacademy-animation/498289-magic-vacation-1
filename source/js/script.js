@@ -11,6 +11,7 @@ import FullPageScroll from './modules/full-page-scroll';
 import load from './modules/load.js';
 
 // init modules
+load();
 mobileHeight();
 slider();
 menu();
@@ -19,7 +20,6 @@ chat();
 result();
 form();
 social();
-load();
 
 const fullPageScroll = new FullPageScroll();
 fullPageScroll.init();
