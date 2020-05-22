@@ -37,8 +37,8 @@
   color: $c-light;
   transform: translateX(-4rem);
   opacity: 0;
-  transition: opacity 0.8s cubic-bezier(.08,.82,.17,1),
-              transform 0.8s cubic-bezier(.08,.82,.17,1);
+  transition: opacity 0.8s cubic-bezier(0.08, 0.82, 0.17, 1),
+    transform 0.8s cubic-bezier(0.08, 0.82, 0.17, 1);
 
   @media (min-width: $stop-scaling) {
     top: -5px;
@@ -138,7 +138,7 @@
   display: flex;
   align-items: center;
   opacity: 0;
-  transition: opacity 0.8s cubic-bezier(.08,.82,.17,1);
+  transition: opacity 0.8s cubic-bezier(0.08, 0.82, 0.17, 1);
 
   @media (max-width: $tablet) and (orientation: portrait) {
     position: fixed;
@@ -262,7 +262,7 @@
       left: auto;
       right: 0;
       opacity: 1;
-      transition: all 0.35s cubic-bezier(.14,.65,.54,1.1);
+      transition: all 0.35s cubic-bezier(0.14, 0.65, 0.54, 1.1);
 
       @media (max-width: $tablet) and (orientation: portrait) {
         left: 0;
@@ -274,26 +274,6 @@
         left: 0;
         right: 0;
         background-color: $c-dark;
-      }
-    }
-
-    &.active {
-      &::after {
-        width: 100%;
-      }
-    }
-
-    &:hover,
-    &:focus {
-      color: $c-purple;
-      outline: none;
-      transition: color 0.35s ease;
-
-      &::after {
-        left: 0;
-        right: auto;
-        background-color: $c-purple;
-        width: 100%;
       }
     }
   }
@@ -325,5 +305,29 @@
 
   .page-header__nav {
     opacity: 1;
+
+    a {
+      &.active {
+        &::after {
+          left: 0;
+          right: auto;
+          width: 100%;
+        }
+      }
+
+      &:hover,
+      &:focus {
+        color: $c-purple;
+        outline: none;
+        transition: color 0.35s ease;
+
+        &::after {
+          left: 0;
+          right: auto;
+          background-color: $c-purple;
+          width: 100%;
+        }
+      }
+    }
   }
 }
