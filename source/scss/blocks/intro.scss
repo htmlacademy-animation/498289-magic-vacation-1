@@ -86,17 +86,6 @@
   }
 }
 
-@keyframes fade-in-top {
-  from {
-    opacity: 0;
-    transform: translateY(10%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 .intro__message {
   flex: none;
   width: 50.9rem;
