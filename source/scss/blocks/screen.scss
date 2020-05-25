@@ -7,7 +7,7 @@
   overflow: hidden;
 
   &--hidden {
-    visibility: hidden;
+    // visibility: hidden;
     pointer-events: none;
   }
 
@@ -353,6 +353,31 @@
 .screen--rules {
   background-color: $c-dark;
 }
+
+.screen--intro,
+.screen--story,
+.screen--prizes,
+.screen--rules,
+.screen--game {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.screen.active ~ .screen {
+  visibility: hidden;
+}
+
+.screen--prizes {
+  z-index: 2;
+}
+
+.screen--prizes ~ .screen {
+  z-index: 2;
+}
+
 
 .page-loaded {
   .screen__footer {
