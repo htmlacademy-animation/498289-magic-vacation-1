@@ -168,3 +168,20 @@
     font-size: 48px;
   }
 }
+
+.intro__title .letter-animated-word {
+  margin-top: -0.1em;
+  padding-top: 0.1em;
+}
+
+.intro__date {
+  .letter-animated-word {
+    margin-top: -0.1em;
+    padding-top: 0.1em;
+    margin-right: 0.18em;
+
+    span:last-child {
+      padding-right: 0.04em;
+    }
+  }
+}
