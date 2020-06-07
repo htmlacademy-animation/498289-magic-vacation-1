@@ -78,8 +78,8 @@ class LetterAnimation {
       const wordContainer = document.createElement(`span`);
 
       wordContainer.classList.add(
-        `letter-animated-word`,
-        `letter-animated-word--${this._property}`
+          `letter-animated-word`,
+          `letter-animated-word--${this._property}`
       );
       wordContainer.appendChild(wordElement);
       fragmentParent.appendChild(wordContainer);
