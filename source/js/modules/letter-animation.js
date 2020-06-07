@@ -49,10 +49,12 @@ class LetterAnimation {
     const span = document.createElement(`span`);
     span.textContent = letter;
     const timeGap = this._getTimeGap();
-    
+
     this.timeOffset += timeGap;
-    span.style.transition = `${this._property} ${this._timer + timeGap}ms ease ${this.timeOffset}ms`;
-    
+    span.style.transition = `${this._property} ${
+      this._timer + timeGap
+    }ms ease ${this.timeOffset}ms`;
+
     this._letterCounter++;
     return span;
   }
@@ -75,7 +77,10 @@ class LetterAnimation {
 
       const wordContainer = document.createElement(`span`);
 
-      wordContainer.classList.add(`letter-animated-word`, `letter-animated-word--${this._property}`);
+      wordContainer.classList.add(
+        `letter-animated-word`,
+        `letter-animated-word--${this._property}`
+      );
       wordContainer.appendChild(wordElement);
       fragmentParent.appendChild(wordContainer);
 
