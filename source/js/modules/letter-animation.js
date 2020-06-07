@@ -5,7 +5,7 @@ class LetterAnimation {
     classForActivate,
     property,
     animationDelay = 0,
-    letterDelay = 50,
+    letterDelay = 30,
   }) {
     this._TIME_SPACE = 100;
 
@@ -21,7 +21,7 @@ class LetterAnimation {
     this.prePareText();
   }
 
-  _setTimeOffset() {
+  _getTimeGap() {
     let timeGap;
 
     switch (this._letterCounter % 3) {
@@ -42,17 +42,18 @@ class LetterAnimation {
         break;
     }
 
-    this.timeOffset += timeGap;
-    this._letterCounter++;
+    return timeGap;
   }
 
   createElement(letter) {
     const span = document.createElement(`span`);
     span.textContent = letter;
-
-    this._setTimeOffset();
-    span.style.transition = `${this._property} ${this._timer}ms ease ${this.timeOffset}ms`;
-
+    const timeGap = this._getTimeGap();
+    
+    this.timeOffset += timeGap;
+    span.style.transition = `${this._property} ${this._timer + timeGap}ms ease ${this.timeOffset}ms`;
+    
+    this._letterCounter++;
     return span;
   }
 

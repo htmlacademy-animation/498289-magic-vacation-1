@@ -93,6 +93,8 @@
   text-transform: uppercase;
   font-size: 2.4rem;
   line-height: 1.27;
+  animation-fill-mode: both;
+  opacity: 0;
 
   @media (min-width: $stop-scaling) {
     width: 509px;
@@ -135,18 +137,14 @@
   }
 }
 
-.active .intro__message {
-  animation-name: fade-in-top;
-  animation-duration: 0.5s;
-  animation-timing-function: ease-out;
-}
-
 .intro__label {
   margin: 0 0 1.6rem;
   max-width: 25rem;
   text-transform: uppercase;
   font-size: 2.4rem;
   line-height: 1.2;
+  opacity: 0;
+  animation-fill-mode: both;
 
   @media (min-width: $stop-scaling) {
     margin: 0 0 16px;
