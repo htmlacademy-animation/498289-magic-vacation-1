@@ -11,10 +11,12 @@ import FullPageScroll from './modules/full-page-scroll';
 import prizes from './modules/prizes';
 import load from './modules/load.js';
 import rules from './modules/rules.js';
+import intro from './modules/intro.js';
 
 // init modules
 load();
 mobileHeight();
+intro();
 slider();
 menu();
 footer();
