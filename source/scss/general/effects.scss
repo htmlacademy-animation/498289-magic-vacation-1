@@ -39,3 +39,25 @@
     transform: scale(1);
   }
 }
+
+@keyframes roll-in-left {
+  from {
+    transform: translateX(-500%) rotate(-180deg);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) rotate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes roll-in-right {
+  from {
+    transform: translateX(500%) rotate(180deg);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) rotate(0);
+    opacity: 1;
+  }
+}

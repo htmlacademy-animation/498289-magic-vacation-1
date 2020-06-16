@@ -179,6 +179,9 @@
   width: 4rem;
   height: 4rem;
   color: $c-dark;
+  animation-fill-mode: none;
+  animation-timing-function: ease-out;
+  animation-duration: 400ms;
 
   @media (min-width: $stop-scaling) {
     width: 40px;
@@ -243,6 +246,17 @@
     opacity: 0.5;
     pointer-events: none;
   }
+}
+
+.slider__control--prev {
+  animation-name: roll-in-left;
+}
+.slider__control--next {
+  animation-name: roll-in-right;
+
+}
+.screen--hidden .slider__control {
+  animation: none;
 }
 
 .slider__pagination.swiper-pagination {
