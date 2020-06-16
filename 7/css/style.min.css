@@ -3251,7 +3251,7 @@ img {
   height: 4rem;
   color: #5f458c;
   animation-fill-mode: none;
-  animation-timing-function: ease-out;
+  animation-timing-function: cubic-bezier(0, 0, 0.79, 1.53);
   animation-duration: 400ms; }
   .slider__control:focus {
     outline: none; }
